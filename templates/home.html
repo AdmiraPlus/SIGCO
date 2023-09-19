@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% extends 'base_template.html' %}
+
+<!-- Block Title  ---------------------------------------------------------------------------------------->
+{% block title %}
+	SIGCO
+{% endblock title %}
+
+
+<!-- Bloque navbar -->
+{% block header %} {% endblock header %}
+
+<!-- Bloque sidemenu -->
+{% block sidemenu %}
+	<div class="l-navbar" id="navbar">
+		<nav class="nav">
+			<div>
+				<div class="nav__brand">
+					<ion-icon name="menu-outline" class="nav__toggle" id="nav-toggle"></ion-icon>
+					<a href="#" class="nav__logo">SigcoCloud</a>
+				</div>
+				<div class="nav__list">
+					<a href="#" class="nav__link active">
+						<ion-icon name="home-outline" class="nav__icon"></ion-icon>
+						<span class="nav__name">Dashboard</span>
+					</a>
+					<a href="#" class="nav__link">
+						<ion-icon name="chatbubbles-outline" class="nav__icon"></ion-icon>
+						<span class="nav__name">Mensajes</span>
+					</a>
+					
+					<div  class="nav__link collapse">
+						<ion-icon name="folder-outline" class="nav__icon"></ion-icon>
+						<span class="nav__name">Aplicaciones</span>
+						
+						<ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+						
+						<ul class="collapse__menu">
+							<a href="#" class="collapse__sublink">Maestros</a>
+							<a href="#" class="collapse__sublink">Ventas</a>
+							<a href="#" class="collapse__sublink">Compras</a>
+							<a href="#" class="collapse__sublink">Tesorería</a>
+							<a href="#" class="collapse__sublink">Logística</a>
+							<a href="#" class="collapse__sublink">Punto de Venta</a>
+							<a href="#" class="collapse__sublink">Contabilidad</a>
+						</ul>
+					</div>
+					
+					<a href="#" class="nav__link">
+						<ion-icon name="pie-chart-outline" class="nav__icon"></ion-icon>
+						<span class="nav__name">Analítica</span>
+					</a>
+					<div class="nav__link collapse">
+						<ion-icon name="people-outline" class="nav__icon"></ion-icon>
+						<span class="nav__name">Usuarios</span>
+						
+						<ion-icon name="chevron-down-outline" class="collapse__link"></ion-icon>
+						
+						<ul class="collapse__menu">
+							<a href="#" class="collapse__sublink">Data</a>
+							<a href="#" class="collapse__sublink">Group</a>
+							<a href="#" class="collapse__sublink">Members</a>
+						</ul>
+					</div>
+					<a href="#" class="nav__link">
+						<ion-icon name="settings-outline" class="nav__icon"></ion-icon>
+						<span class="nav__name">Configuración</span>
+					</a>
+				</div>
+			</div>
+			
+			<a href="#" class="nav__link">
+				<ion-icon name="log-out-outline" class="nav__icon"></ion-icon>
+				<span class="nav__name">Cerrar Sesión</span>
+			</a>
+		</nav>
+	</div>
+{% endblock sidemenu %}
+
+<!-- Bloque main -->
+{% block main %} {% endblock main %}
+
+<!-- Bloque footer -->
+{% block footer %} {% endblock footer %}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{% block title %} {% endblock title %}</title>
+		
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="static/css/styles.css">
+		
+	</head>
+	<body id="body-pd">
+		<!-- Bloque navbar -->
+		{% block header %} {% endblock header %}
+		
+		<!-- Bloque sidemenu -->
+		{% block sidemenu %} {% endblock sidemenu %}
+		
+		<!-- Bloque main -->
+		{% block main %} {% endblock main %}
+		
+		<!-- Bloque footer -->
+		{% block footer %} {% endblock footer %}
+		
+		
+        <!-- ===== IONICONS ===== -->
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        
+        <!-- ===== MAIN JS ===== -->
+        <script src="static/js/main.js"></script>
+		
+	</body>
+</html>
